@@ -7,6 +7,6 @@ function my_Dictionary() {  //This function creates a dictionary (object) and di
         Name: "Jessie",
         Sound: "woof woof!"
     };
-    document.getElementById("Dictionary").innerHTML = Animal.Name + " is a " + Animal.Color + "  "  + Animal.Breed + "."; //Displays the key value pairs in the HTML document.
     delete Animal.Sound; //Deletes the key value pair from the dictionary.
+    document.getElementById("Dictionary").innerHTML = Animal.Name + " is a " + Animal.Color + "  "  + Animal.Breed + "."; //Displays the key value pairs in the HTML document.
 }
