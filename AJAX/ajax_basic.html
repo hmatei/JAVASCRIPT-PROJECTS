@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Basic AJAX Demo</title>
+	<!--Linking the external stylesheet-->
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<!--Main container that will be display AJAX content-->
+	<div class='container' id="content">
+		<h1>Sign up for our Newsletter</h1>
+		<div class="display">
+			<!--This section is the newsletter form that user fills out with their full name and email below-->
+			<form>
+				<input id="fullName"  placeholder="Name">
+				<input placeholder="Email">
+				<!--Calls the getMsg function-->
+				<input onclick="getMsg();" type="button" class="btn" value="Submit">
+			</form>
+		</div>
+	</div>
+	<div class="container">
+		<h2>AJAX Challenge</h2>
+		<!--This paragraph will be replaced with content from content.html-->
+		<p id="ajaxParagraph">
+			Click the button below to load new content without refreshing the page.
+		</p>
+		<!--Calls the loadContent functon when clicked-->
+		<button type="button" class="btn" onclick="loadContent();">
+			Load New Content
+		</button>
+	</div>
+	<!--links the external Javascript file-->
+	<script src="ajaxScript.js"></script>
+</body>
+</html>
